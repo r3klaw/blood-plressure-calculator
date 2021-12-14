@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Hypertansion neaural network</h1>
+  <div class="row">
+    <div class="col">
+      <form>
+        <div class="form-group">
+          <label for="InputAge">Age</label>
+          <input type="text" class="form-control" id="InputAge" aria-describedby="ageHelp" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <label for="InputSex">Sex</label>
+          <select class="form-control" id="FormControlSelectSex">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="InputDiastole">Diastole</label>
+          <input type="text" class="form-control" id="InputDiastole" aria-describedby="diastoleHelp" placeholder="Diastole">
+        </div>
+        <div class="form-group">
+          <label for="InputSystole">Systole</label>
+          <input type="text" class="form-control" id="InputSytole" aria-describedby="systoleHelp" placeholder="Systole">
+        </div>
+        <div class="form-group">
+          <label for="InputHeight">Height</label>
+          <input type="text" class="form-control" id="InputHeight" aria-describedby="emailHeight" placeholder="Height">
+        </div>
+        <div class="form-group">
+          <label for="InputWeight">Weight</label>
+          <input type="text" class="form-control" id="InputWeight" aria-describedby="weightHelp" placeholder="Weight">
+        </div>
+        @* <button type="submit" class="btn btn-primary">Submit</button> *@
+      </form>
+    </div>
+    <div class="col">
+      <form>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="diabeticCheck">
+          <label class="form-check-label" for="diabeticCheck">Diabetic</label>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="normalCheck">
+          <label class="form-check-label" for="normalCheck">Normal</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="col"></div>
+  </div>
+  <br/>
+  <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+    <div  role="group" aria-label="First group">
+      <a class="btn btn-primary" href="#" role="button">Load Data</a>
+          <a class="btn btn-primary" href="#" role="button">Train Network</a>
+          <a class="btn btn-primary" href="#" role="button">Error Graph</a>
+          <a class="btn btn-primary" href="#" role="button">Accuracy Graph</a>
+          <a class="btn btn-primary" href="#" role="button">New Case</a>
+    </div>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="hidden neurons" aria-label="hidden neurons" aria-describedby="btnGroupAddon">
+      <input type="text" class="form-control" placeholder="c1" aria-label="c1" aria-describedby="btnGroupAddon">
+      <input type="text" class="form-control" placeholder="c2" aria-label="c2" aria-describedby="btnGroupAddon">
+      <input type="text" class="form-control" placeholder="no of particles" aria-label="no of particles" aria-describedby="btnGroupAddon">
+    </div>
+  </div>
+</div>
